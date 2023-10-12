@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(0, "");
+
+	char answer; 
+	bool var = true; 
+
+	cout << "Введите букву из перечня, для расчета времени в пути (A,B,C,D,E): ";
+
+	do {
+		var = false;  
+		
+		cin >> answer;
+
+		switch (answer) 
+		{
+		case 'a':
+		case 'A':  
+			cout << "Станция метро Выхино: ";
+			cout << "Время в пути - 5 мин." << endl;
+			break;
+		case 'b':
+		case 'B':
+			cout << "Станция метро Вешняки: ";  
+			cout << "Время в пути - 10 мин." << endl;
+			break;
+		case 'c':
+		case 'C':
+			cout << "Станция метро Коренево: ";
+			cout << "Время в пути -  невозможно." << endl;
+			break;
+		case 'd':
+		case 'D':
+			cout << "Станция метро Электрозаводская: ";
+			cout << "Время в пути - 25 мин." << endl;
+			break;
+		case 'e':
+		case 'E':
+			cout << "Станция метро Раменское: ";
+			cout << "Время в пути - 38 мин." << endl;
+			break;
+		default: 
+			cout << answer << " - некорректный ввод! ";
+			cout << "Сделайте правильный выбор (A,B,C,D,E): ";
+			var = true;  
+		}
+	} while (var);  
+	return 0;
+} 
