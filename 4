@@ -1,0 +1,19 @@
+#include <iostream> 
+using namespace std; 
+int main() {
+	setlocale(0, "");
+	int a, b, c, d;
+	cout << "Введите первый множитель:";
+	cin >> a;
+	cout << "Введите второй множитель:";
+	cin >> b;
+	cout << "Введите ответ:";
+	cin >> c;
+
+	d = a * b;
+	if (d == c)
+		cout << "верно\n";
+	else cout << "не верно\n" << "правильное число " << d;
+
+	return 0;
+}
